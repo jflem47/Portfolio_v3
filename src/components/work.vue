@@ -67,6 +67,7 @@ section {
 .txt-container {
     margin: 2rem;
     text-justify: auto;
+    box-shadow: 7px 7px black;
 }
 
 .diagonal {

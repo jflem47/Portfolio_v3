@@ -8,12 +8,12 @@
                 Please, <font-awesome-icon icon="fa-solid fa-at" /><div class="button"><a class="email" href="mailto:jflemieux@parallel46.ca">contact me</a></div> 
                 and I will be glad to answer all of your questions.
             </div>
-            <div class="git">
-                Visit my github : 
-                <a href="https://github.com/jflem47"><font-awesome-icon class="git_ico" icon="fa-brands fa-github" /></a>
-            </div>
         </div>
     </section>
+    <div class="git">
+        <b>Visit my github : </b>
+        <a target="_blank" href="https://github.com/jflem47"><font-awesome-icon class="git_ico" icon="fa-brands fa-github" /></a>
+    </div>
 </template>
 
 <script>
@@ -33,6 +33,7 @@ section {
 .txt-container {
     margin: 2rem;
     text-justify: auto;
+    box-shadow: 7px 7px black;
 }
 
 .wrapper {
@@ -77,10 +78,18 @@ section {
     display: grid;
     place-items: center;
     width: 100%;
-    height: 5rem;
+    height: 7rem;
+    font-family: "Arvo", sans-serif;
 }
 
 .git_ico {
+    margin-top: 2rem;
     scale: 3;
+    transition: 0.3s;
+    margin-bottom: 5rem;
+}
+
+.git_ico:hover {
+    scale: 3.4;
 }
 </style>

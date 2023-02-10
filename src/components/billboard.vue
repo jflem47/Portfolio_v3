@@ -4,7 +4,7 @@
       <div id="billboard">
         <div class="bill-text">
           <div class="title-text">
-            <b>Parallel46</b>
+            <b>JEFF LEMIEUX</b>
           </div>
         </div>
         <div class="svg-container">
@@ -15,13 +15,13 @@
           </svg>
           <div id="sub-bill">
             <div class="subtitle-text">
-              Multimedia/web solutions
+             Web Solutions
             </div>
             <div class="subtitle-text">
-              App development
+              App Development
             </div>
             <div class="subtitle-text">
-              Website creation
+              Website Creation
             </div>
           </div>
           <svg class="prog" id="prog2" width="150" height="250" viewBox="0 0 116 383" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +32,7 @@
 
         </div>
         <div class="instructions-bill">
-          <b>My name is Jeff Lemieux, and I am a fullstack web developer.</b>
+          <b>I am a fullstack web developer.</b>
         </div>
       </div>
     </div>
@@ -82,12 +82,13 @@ export default {
 .title-text {
   color: black;
   font-family: "Arvo", sans-serif;
-  font-size: 200px;
+  font-size: 160px;
   opacity: 0;
+  white-space: nowrap;
 }
 
 .subtitle-text {
-  font-family: "Arvo", sans-serif;
+  font-family: "Khula", sans-serif;
   font-size: 50px;
   text-align: center;
   color: black;
@@ -117,9 +118,9 @@ export default {
   color: black;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
   .title-text {
-    font-size: 120px;
+    font-size: 110px;
   }
 
   .subtitle-text {
@@ -132,7 +133,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 830px) {
   .title-text {
     font-size: 75px;
   }
@@ -151,7 +152,11 @@ export default {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 570px) {
+
+  .title-text {
+    font-size: 60px;
+  }
 
   .subtitle-text {
     font-size: 15px;
@@ -159,23 +164,22 @@ export default {
 
   .instructions-bill {
     text-align: center;
-    font-size: 20px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+
+  .title-text {
+    font-size: 50px;
   }
 
-  @media screen and (max-width: 385px) {
-
-.subtitle-text {
-  font-size: 15px;
 }
 
-.title-text {
-  font-size: 60px;
-}
+@media screen and (max-width: 380px) {
 
-.instructions-bill {
-  text-align: center;
-  font-size: 20px;
-}
-}
+  .title-text {
+    font-size: 40px;
+  }
 }
 </style>

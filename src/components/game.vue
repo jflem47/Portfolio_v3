@@ -3,7 +3,7 @@
   <div class="title-text">
     Wanna play ?
   </div>
-  <div class="txt-container">
+    <div class="txt-container">
     <div class="wrapper">
       ./game_instructions
     </div>
@@ -15,9 +15,9 @@
           The MiniMax algorithm calculates the best move on every turn. <br/>
           You can reset the game by refreshing the page.
         </p>
-        
     </div>
   </div>
+  
   <div id="board" class="board">
     <div class="row">
       <div id="sq1" class="square odd">
@@ -326,15 +326,6 @@ export default {
 }
 
 .wrapper {
-  display: grid;
-}
-
-.txt-container {
-    margin: 2rem;
-    text-justify: auto;
-}
-
-.wrapper {
     border-radius: 1px;
     border-color: black;
     border-style: solid;
@@ -345,11 +336,21 @@ export default {
     margin-inline: auto;
     max-width: 50rem;
     padding-inline: 1rem;
+    
+}
+
+.txt-container {
+    margin: 2rem;
+    text-justify: auto;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, lime 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, yellow 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, magenta 40px -40px;
 }
 
 .square {
-  width: 12rem;
-  height: 12rem;
+  width: 15rem;
+  height: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,7 +377,7 @@ export default {
     scale: 1.05;
     box-sizing: border-box;
     border-style: solid;
-    border-color: blue;
+    border-color: black;
     border-width: 3px;
     border-radius: 3px;
   }
@@ -391,19 +392,18 @@ export default {
 }
 
 .board {
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 50%;
+  display: inline-block;
+  margin-left: 50%;
   transform: translateX(-50%);
+  box-shadow: 7px 7px black;
 }
 
 .game-comp {
-  margin-top: 30px;
+  margin-top: 100px;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 150vh;
+  height: 200vh;
 }
 
 .aiToken {
@@ -418,7 +418,7 @@ export default {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .disabled {
@@ -434,42 +434,71 @@ export default {
 @media screen and (max-width: 1250px) {
 
   .wrapper {
-    font-size: 12px;
+    font-size: 1rem;
+  }
+
+  .txt-container {
+    margin-left: 25%;
+    margin-right: 25%;
+    transform: translateX(0);
   }
 
   .title-text {
-    font-size: 80px;
+    font-size: 100px;
   }
 
   .game-comp {
-    height: 100vh;
-  }
-
-  .square {
-    height: 7rem;
-    width: 7rem;
+    height: 180vh;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
+
+  .txt-container {
+    transform: translateX(0);
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  
+}
+
+@media screen and (max-width: 780px) {
+
+  .title-text {
+    font-size: 70px;
+  }
+
+  .wrapper {
+    font-size: 0.8rem;
+  }
+
   .square {
-    height: 5rem;
-    width: 5rem;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .game-comp {
+    height: 160vh;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .square {
-    height: 4rem;
-    width: 4rem;
-  }
-}
 
-@media screen and (max-width: 385px) {
-  .square {
-    height: 3.5rem;
-    width: 3.5rem;
+  .title-text {
+    font-size: 50px;
+    white-space: pre-wrap;
   }
+
+  .square {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .game-comp {
+    height: 130vh;
+  }
+
 }
 
 </style>

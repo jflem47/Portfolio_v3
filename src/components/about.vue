@@ -79,11 +79,18 @@ body {
     object-fit: cover;
     border-radius: 50%;
     margin: 1rem;
+    transition: 0.4s;
+}
+
+#photo:hover {
+    scale: 1.1;
 }
 
 .txt-container {
     margin: 2rem;
     text-justify: auto;
+    display: block;
+    box-shadow: 7px 7px black;
 }
 
 .email {
