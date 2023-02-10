@@ -341,6 +341,8 @@ export default {
 
 .txt-container {
     margin: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
     text-justify: auto;
     display: inline-block;
     margin-left: 50%;

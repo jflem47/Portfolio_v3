@@ -49,10 +49,10 @@ export default {
 
     //Text animation
     let tl = gsap.timeline()
-    tl.to('.title-text', {opacity: 1, ease: "circ.out"}).duration(1).delay(1)
-    tl.from(".prog", {opacity:0, y:30}).delay(1)
-    tl.to('#sub-bill', {opacity: 1, ease: "circ.out"}).duration(2).delay(1)
-    tl.from(".instructions-bill", {opacity:0, y:30}).delay(1)
+    tl.to('.title-text', {opacity: 1, ease: "circ.out"}).duration(1)
+    tl.from(".prog", {opacity:0, y:30})
+    tl.to('#sub-bill', {opacity: 1, ease: "circ.out"}).duration(2)
+    tl.from(".instructions-bill", {opacity:0, y:30})
 
     let tl2= gsap.timeline({repeat:-1})
     tl2.to("#prog1", {rotation:"-=10", duration:2})
