@@ -4,7 +4,7 @@
             <img id="photo" src="../assets/Jeff-web-39.jpg"/>
             <div class="txt-container">
                 <div class="wrapper">
-                    ./About_me
+                    ./about_me
                 </div>
                 <div class="wrapper">
                     <p>

@@ -3,12 +3,20 @@
   <div class="title-text">
     Wanna play ?
   </div>
-  <div class="game-txt">
-    Play tic-tac-tow with me ! <br/>
-    This game was entirely created with HTML, CSS and Javascript. <br/>
-    It is impossible for you to win, but one first good move can lead to a draw. <br/>
-    The MiniMax algorithm calculates the best move on every turn. <br/>
-    You can reset the game by refreshing the page.
+  <div class="txt-container">
+    <div class="wrapper">
+      ./game_instructions
+    </div>
+      <div class="wrapper">
+        <p>
+          Play tic-tac-tow with me ! <br/>
+          This game was entirely created with HTML, CSS and Javascript. <br/>
+          It is impossible for you to win, but one first good move can lead to a draw. <br/>
+          The MiniMax algorithm calculates the best move on every turn. <br/>
+          You can reset the game by refreshing the page.
+        </p>
+        
+    </div>
   </div>
   <div id="board" class="board">
     <div class="row">
@@ -317,15 +325,31 @@ export default {
   font-family: "Arvo", sans-serif;
 }
 
-.game-txt {
-  text-align: center;
-  margin: 40px;
-  font-family: "Arvo", sans-serif;
+.wrapper {
+  display: grid;
+}
+
+.txt-container {
+    margin: 2rem;
+    text-justify: auto;
+}
+
+.wrapper {
+    border-radius: 1px;
+    border-color: black;
+    border-style: solid;
+    font-family: "Arvo", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0;
+    margin-inline: auto;
+    max-width: 50rem;
+    padding-inline: 1rem;
 }
 
 .square {
-  width: 15vw;
-  height: 15vw;
+  width: 12rem;
+  height: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,7 +403,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 200vh;
+  height: 150vh;
 }
 
 .aiToken {
@@ -407,14 +431,37 @@ export default {
   z-index: 9;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1250px) {
 
-  .game-txt {
+  .wrapper {
     font-size: 12px;
   }
 
   .title-text {
     font-size: 80px;
+  }
+
+  .game-comp {
+    height: 100vh;
+  }
+
+  .square {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .square {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .square {
+    height: 4rem;
+    width: 4rem;
   }
 }
 
