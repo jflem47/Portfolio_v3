@@ -6,7 +6,7 @@
             </div>
             <div class="wrapper">
                 Please, <font-awesome-icon icon="fa-solid fa-at" /><div class="button"><a class="email" href="mailto:jflemieux@parallel46.ca">contact me</a></div> 
-                and I will ba glad to answer all of your questions.
+                and I will be glad to answer all of your questions.
             </div>
             <div class="git">
                 Visit my github : 

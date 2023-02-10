@@ -9,7 +9,7 @@
     </div>
       <div class="wrapper">
         <p>
-          Play tic-tac-tow with me ! <br/>
+          Play tic-tac-toe with me ! <br/>
           This game was entirely created with HTML, CSS and Javascript. <br/>
           It is impossible for you to win, but one first good move can lead to a draw. <br/>
           The MiniMax algorithm calculates the best move on every turn. <br/>
