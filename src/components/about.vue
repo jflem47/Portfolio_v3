@@ -118,4 +118,10 @@ body {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .wrapper {
+        font-size: 1rem;
+    }
+}
+
 </style>

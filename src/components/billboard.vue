@@ -161,5 +161,21 @@ export default {
     text-align: center;
     font-size: 20px;
   }
+
+  @media screen and (max-width: 385px) {
+
+.subtitle-text {
+  font-size: 15px;
+}
+
+.title-text {
+  font-size: 60px;
+}
+
+.instructions-bill {
+  text-align: center;
+  font-size: 20px;
+}
+}
 }
 </style>

@@ -465,4 +465,11 @@ export default {
   }
 }
 
+@media screen and (max-width: 385px) {
+  .square {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
+
 </style>
