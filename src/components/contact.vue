@@ -12,7 +12,7 @@
     </section>
     <div class="git">
         <b>Visit my github : </b>
-        <a target="_blank" href="https://github.com/jflem47"><font-awesome-icon class="git_ico" icon="fa-brands fa-github" /></a>
+        <a aria-label="Link to my Github" target="_blank" href="https://github.com/jflem47"><font-awesome-icon class="git_ico" icon="fa-brands fa-github" /></a>
     </div>
 </template>
 

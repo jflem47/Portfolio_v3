@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="diagonal">
-            <img id="photo" src="../assets/Jeff-web-39.jpg"/>
+            <img alt="Jeff Lemieux's photo." id="photo" src="../assets/Jeff-web-39.jpg"/>
             <div class="txt-container">
                 <div class="wrapper">
                     ./about_me
@@ -18,7 +18,7 @@
                     </p>
                     <div class="button">
                         <font-awesome-icon icon="fa-solid fa-at" />
-                        <a class="email" href="mailto:jflemieux@parallel46.ca">Drop me a line !</a>
+                        <a aria-label="Link to my email" class="email" href="mailto:jflemieux@parallel46.ca">Drop me a line !</a>
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@ body {
 }
 
 .button:hover:after {
-    background-color: aliceblue;
+    background-color: yellow;
 }
 
 @media screen and (max-width: 1250px) {

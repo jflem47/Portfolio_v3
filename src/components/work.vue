@@ -80,7 +80,7 @@ export default {
     name: "Work",
     mounted() {
         let tl = gsap.timeline({repeat:-1})
-        tl.to(".triangle", {rotation: "+=20", duration:5})
+        tl.to(".triangle", {rotation: "+=360", duration:60})
         .yoyo(true)
     }
 }
