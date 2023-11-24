@@ -11,9 +11,9 @@
                         I have a computer science degree from Laval University in Quebec city,
                         I am currently attending the 42Quebec School of programming
                         and I am also a Master of Music (M.Mus) in jazz guitar performance.
-                        I am seeking a junior programmer position as a front-end or back-end developer.
+                        I am seeking a full-stack programmer position.
                         My strengths as a programmer reside in my creativity and my perseverance. When I put
-                        my mind to something, there is no stoping me.
+                        my mind to something, there is no stopping me.
 
                     </p>
                     <div class="button">
