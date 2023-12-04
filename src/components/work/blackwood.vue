@@ -55,97 +55,52 @@
   </svg>
   <section class="diagonal">
     <div class="margin">
-      <div v-if="lang.lang === 'en'">
-        <div class="txt-container">
-          <div class="wrapper">./past_experiences/blackwood_app</div>
-          <div class="wrapper">
-            <h3>
-              Blackwood | Full-stack web application for in-house management
-            </h3>
-            Full-Stack Developer and creator of the Blackwood
-            project, an internal management web application. I
-            implemented a sophisticated reservation system with
-            secure authentication for a major attraction. In
-            addition to core functionalities, the project now
-            includes billing tracking and a task list.
-            <br/>
-            <br/>
-            <b>Technologies: NextJs, ReactJs, MUI Material, HTML, CSS, JavaScript.</b>
-
-          </div>
-        </div>
-      </div>
-      <div v-else>
-        <div class="txt-container">
-          <div class="wrapper">./experience_recente/blackwood_app</div>
-          <div class="wrapper">
-            <h3>
-              Blackwood | Application web Full-stack pour la gestion interne
-            </h3>
-              Développeur Full-Stack et créateur du projet Blackwood, une application web de gestion interne. J'ai mis en place un système de réservation sophistiqué avec une authentification sécurisée pour une attraction majeure. En plus des fonctionnalités de base, le projet comprend désormais le suivi des facturations et une liste de tâches.
-            <br/>
-            <br/>
-            <b>Technologies: NextJs, ReactJs, MUI Material, HTML, CSS, JavaScript.</b>
-          </div>
-        </div>
-      </div>
-      
-      <div v-if="lang.lang === 'en'">
-        <div class="txt-container top">
-          <div class="wrapper">./past_experiences/coesio</div>
-          <div class="wrapper">
-            <h3>COESIO's new website</h3>
-            <div class="button">
-              <font-awesome-icon icon="fa-solid fa-at" />
-              <a
-                aria-label="Link to my email"
-                class="email"
-                href="https://www.coesio.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                >coesio.com</a
-              >
-            </div>
-            <br /><br />
-            Developer of the new COESIO website (coesio.com), an
-            environmental consulting firm in Montreal. Chose
-            Webflow for its HTML/CSS integration and easy
-            customization. Created a visually appealing site with
-            CMS for smooth content editing. Features include a
-            robust blog, job offering modules, and responsive
-            design for an optimal experience on all platforms.
-            Used CSS, HTML, Figma, and Webflow in Front-End.
-            Web development experience, providing the client
-            with a site in line with their brand and easy content
-            management.
-            <br/>
-            <br/>
-            <b>Technologies: Webflow, HTML, CSS, JavaScript, Figma.</b>
-          </div>
-        </div>
-      </div>
-      <div v-else>
-        <div class="txt-container top">
-          <div class="wrapper">./experience_recente/coesio</div>
-          <div class="wrapper">
-            <h3>Nouveau site web de COESIO</h3>
-            <div class="button">
-              <font-awesome-icon icon="fa-solid fa-at" />
-              <a
-                aria-label="Link to my email"
-                class="email"
-                href="https://www.coesio.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                >coesio.com</a
-              >
-            </div>
-            <br /><br />
-                Développeur du nouveau site web de COESIO (coesio.com), une entreprise de consultation environnementale basée à Montréal. J'ai opté pour Webflow en raison de son intégration HTML/CSS et de sa facilité de personnalisation. J'ai créé un site visuellement attrayant avec un système de gestion de contenu (CMS) pour une édition de contenu fluide. Les fonctionnalités comprennent un blog robuste, des modules d'offres d'emploi et un design réactif pour une expérience optimale sur toutes les plateformes. Mon travail en Front-End a impliqué l'utilisation de CSS, HTML, Figma et Webflow. Cette expérience de développement web a permis de fournir au client un site conforme à leur identité de marque et facile à gérer en termes de contenu.
-            <br/>
-            <br/>
-              <b>Technologies: Webflow, HTML, CSS, JavaScript, Figma.</b>
-          </div>
+      <div class="txt-container">
+        <div class="wrapper">./past_experiences/blackwood_app</div>
+        <div class="wrapper">
+          <h3>
+            Blackwood | Full-stack web application for in-house management
+          </h3>
+          Full-stack web developer and engineer for a project involving the
+          creation of a sophisticated reservation system for a business managing
+          a sizable attraction. The goal was to efficiently manage reservation
+          details, automate email notifications, generate unique confirmation
+          numbers, coordinate staff schedules, and verify client information
+          upon arrival. The solution involved developing a web application using
+          Next.js and MongoDB, deployed on Heroku, with a user-friendly
+          interface crafted using the MUI framework. The application not only
+          met core requirements but also included advanced features such as
+          statistical analysis, resulting in a comprehensive and centralized
+          system that streamlined the reservation process and improved
+          operational efficiency.
+          <br />
+          <br />
+          The technologies used in the described project include:<br />
+          <br />
+          1. <b>Back-End Development:</b><br />
+          - MongoDB: A NoSQL database used for storing reservation details.<br />
+          - Node.js: A JavaScript runtime for server-side development.<br />
+          <br />
+          2. <b>Front-End Development:</b><br />
+          - React: A JavaScript library for building user interfaces.<br />
+          - Next.js: A React framework for building web applications, providing
+          server-side rendering and other features.<br />
+          - Material UI (MUI): A React UI framework for creating visually
+          appealing user interfaces.<br />
+          <br />
+          3. <b>Web Development:</b><br />
+          - Full-Stack Development: Involves both front-end and back-end
+          development, covering the entire web application.<br />
+          <br />
+          4. <b>Deployment:</b><br />
+          - Heroku: A cloud platform used for deploying and hosting the web
+          application, making it accessible from anywhere.<br />
+          <br />
+          These technologies were combined to create a comprehensive and
+          responsive web application that addressed the specific needs of
+          managing reservations for a sizable attraction.<br />
+          <br />
+          <br />
         </div>
       </div>
     </div>
@@ -205,16 +160,11 @@
     </defs>
   </svg>
 </template>
-
-<script setup>
-import { lang } from "@/scripts/lang";
-</script>
-
 <script>
 import { gsap } from "gsap";
 
 export default {
-  name: "Work",
+  name: "Coesio",
   mounted() {
     let tl = gsap.timeline({ repeat: -1 });
     tl.to(".triangle", { rotation: "+=360", duration: 60 }).yoyo(true);

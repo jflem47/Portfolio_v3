@@ -12,6 +12,8 @@ library.add(faGithub);
 const app = createApp(App);
 
 app.component('font-awesome-icon', FontAwesomeIcon);
+app.config.globalProperties.$lang = "fr";
+
 
 app.use(router);
 

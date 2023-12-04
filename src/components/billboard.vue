@@ -14,34 +14,53 @@
           fill="magenta"/>
           </svg>
           <div id="sub-bill">
-            <div class="subtitle-text">
-             Web Solutions
+            <div v-if="lang.lang === 'en'">
+              <div class="subtitle-text">
+                Web Solutions
+               </div>
+               <div class="subtitle-text">
+                 App Development
+               </div>
+               <div class="subtitle-text">
+                 Website Creation
+               </div>
             </div>
-            <div class="subtitle-text">
-              App Development
-            </div>
-            <div class="subtitle-text">
-              Website Creation
+            <div v-else>
+              <div class="subtitle-text">
+                Solutions Web
+               </div>
+               <div class="subtitle-text">
+                 Développement d'applications
+               </div>
+               <div class="subtitle-text">
+                 Sites web
+               </div>
             </div>
           </div>
           <svg class="prog" id="prog2" width="150" height="250" viewBox="0 0 116 383" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12.5081 382.508L0.789062 350.086C11.7271 345.919 19.1487 338.563 23.0549 328.016C26.831 317.469 28.719 305.36 28.719 291.688V251.844C28.719 238.823 31.7138 226.909 37.7033 216.102C43.5627 205.425 52.8726 196.896 65.633 190.516C78.3935 184.266 95.0601 181.141 115.633 181.141V212.196C103.914 212.196 95.5159 215.776 90.4377 222.938C85.2294 230.099 82.6252 239.735 82.6252 251.844V291.688C82.6252 305.36 80.5419 318.12 76.3752 329.969C72.0783 341.948 64.8518 352.43 54.6955 361.414C44.4091 370.529 30.3466 377.56 12.5081 382.508ZM0.789062 32.7029L12.5081 0.0859375C30.3466 5.16394 44.4091 12.2609 54.6955 21.3749C64.8518 30.3599 72.0783 40.8409 76.3752 52.8209C80.5419 64.6699 82.6252 77.4299 82.6252 91.1019V130.75C82.6252 138.823 83.7971 145.789 86.1409 151.649C88.3544 157.638 91.87 162.261 96.6877 165.516C101.505 168.771 107.821 170.399 115.633 170.399V201.649C95.0601 201.649 78.3935 198.459 65.633 192.078C52.8726 185.828 43.5627 177.365 37.7033 166.688C31.7138 156.011 28.719 144.032 28.719 130.75V91.1019C28.719 81.9869 27.9377 73.5239 26.3752 65.7109C24.6825 57.8989 21.8179 51.1929 17.7815 45.5939C13.6151 39.8649 7.95106 35.5679 0.789062 32.7029Z" 
           fill="lime"/>
           </svg>
-
-
         </div>
         <div class="instructions-bill">
-          <b>I am a fullstack web developer.</b>
+          <div v-if="lang.lang === 'en'">
+            <b>I am a fullstack web developer.</b>
+          </div>
+          <div v-else>
+            <b>Je suis développeur full-stack.</b>
+          </div>
         </div>
       </div>
     </div>
   </section>
 </template>
 
+<script setup>
+import { lang } from '@/scripts/lang';
+</script>
+
 <script>
 import { gsap } from "gsap";
-
 export default {
   name: "BillBoard",
   components: {},
@@ -58,16 +77,11 @@ export default {
     tl2.to("#prog1", {rotation:"-=10", duration:2})
     .to("#prog2", {rotation:"+=10", duration:2})
     .yoyo(true)
-  },
-  data() {
-    return {
-
-    }
   }
 }
 </script>
 
-<style>
+<style scoped>
 #billboard {
   background: linear-gradient(90deg, red 0% 16.67%, yellow 16.67% 33.33%, lime 33.33% 50%, cyan 50% 66.67%, blue 66.67% 83.33%, magenta 83.33% 100%), conic-gradient(from 180deg, red 0%, yellow 0 16.67%, lime 0 33.33%, cyan 0 50%, blue 0 66.67%, magenta 0 83.33%, red 0 100%);
   background-blend-mode: screen, normal;
