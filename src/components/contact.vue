@@ -6,22 +6,18 @@
             </div>
             <div v-if="lang.lang === 'en'" >
                 <div class="wrapper">
-                    Please, <font-awesome-icon icon="fa-solid fa-at" /><div class="button"><a class="email" href="mailto:jflemieux@parallel46.ca">contact me</a></div> 
+                    Please, <font-awesome-icon icon="fa-solid fa-at" /><div class="button"><a class="email" href="mailto:info@jeffl.dev">contact me</a></div> 
                     and I will be glad to answer all of your questions.
                 </div>
             </div>
             <div v-else>
                 <div class="wrapper">
-                    S'il vous plait, <font-awesome-icon icon="fa-solid fa-at" /><div class="button"><a class="email" href="mailto:jflemieux@parallel46.ca">contactez-moi</a></div> 
+                    S'il vous plait, <font-awesome-icon icon="fa-solid fa-at" /><div class="button"><a class="email" href="mailto:info@jeffl.dev">contactez-moi</a></div> 
                     et je serai ravi de répondre à toutes vos questions.
                 </div>
             </div>
         </div>
     </section>
-    <div class="git">
-        <b>Visit my github : </b>
-        <a aria-label="Link to my Github" target="_blank" href="https://github.com/jflem47"><font-awesome-icon class="git_ico" icon="fa-brands fa-github" /></a>
-    </div>
 </template>
 
 <script setup>

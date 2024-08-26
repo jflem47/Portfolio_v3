@@ -4,7 +4,7 @@
       <div id="billboard">
         <div class="bill-text">
           <div class="title-text">
-            <b>JEFF LEMIEUX</b>
+            <b>Jeff L.</b>
           </div>
         </div>
         <div class="svg-container">
@@ -82,9 +82,11 @@ export default {
 </script>
 
 <style scoped>
+
+
 #billboard {
-  background: linear-gradient(90deg, red 0% 16.67%, yellow 16.67% 33.33%, lime 33.33% 50%, cyan 50% 66.67%, blue 66.67% 83.33%, magenta 83.33% 100%), conic-gradient(from 180deg, red 0%, yellow 0 16.67%, lime 0 33.33%, cyan 0 50%, blue 0 66.67%, magenta 0 83.33%, red 0 100%);
-  background-blend-mode: screen, normal;
+  /*background: linear-gradient(90deg, red 0% 16.67%, yellow 16.67% 33.33%, lime 33.33% 50%, cyan 50% 66.67%, blue 66.67% 83.33%, magenta 83.33% 100%), conic-gradient(from 180deg, red 0%, yellow 0 16.67%, lime 0 33.33%, cyan 0 50%, blue 0 66.67%, magenta 0 83.33%, red 0 100%);*/
+  text-shadow: none;
   justify-content: center;
   align-items: center;
   width: 100vw;

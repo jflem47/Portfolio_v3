@@ -57,95 +57,110 @@
     <div class="margin">
       <div v-if="lang.lang === 'en'">
         <div class="txt-container">
-          <div class="wrapper">./past_experiences/blackwood_app</div>
+          <div class="wrapper">./clients</div>
           <div class="wrapper">
-            <h3>
-              Blackwood | Full-stack web application for in-house management
-            </h3>
-            Full-Stack Developer and creator of the Blackwood
-            project, an internal management web application. I
-            implemented a sophisticated reservation system with
-            secure authentication for a major attraction. In
-            addition to core functionalities, the project now
-            includes billing tracking and a task list.
-            <br/>
-            <br/>
-            <b>Technologies: NextJs, ReactJs, MUI Material, HTML, CSS, JavaScript.</b>
-
+            <p><b>My clients</b></p>
+            <p>I develop elegant web solutions tailored to meet the needs of the following businesses:</p>
+            <logosVue/>
           </div>
         </div>
       </div>
       <div v-else>
         <div class="txt-container">
-          <div class="wrapper">./experience_recente/blackwood_app</div>
+          <div class="wrapper">./clients</div>
           <div class="wrapper">
-            <h3>
-              Blackwood | Application web Full-stack pour la gestion interne
-            </h3>
-              Développeur Full-Stack et créateur du projet Blackwood, une application web de gestion interne. J'ai mis en place un système de réservation sophistiqué avec une authentification sécurisée pour une attraction majeure. En plus des fonctionnalités de base, le projet comprend désormais le suivi des facturations et une liste de tâches.
-            <br/>
-            <br/>
-            <b>Technologies: NextJs, ReactJs, MUI Material, HTML, CSS, JavaScript.</b>
+            <p><b>Mes clients</b></p>
+            <p>Je développe des solutions web élégantes, adaptées aux besoins des entreprises suivantes:</p>
+            <logosVue/>
           </div>
         </div>
       </div>
       
       <div v-if="lang.lang === 'en'">
         <div class="txt-container top">
-          <div class="wrapper">./past_experiences/coesio</div>
+          <div class="wrapper">./technologies</div>
           <div class="wrapper">
-            <h3>COESIO's new website</h3>
-            <div class="button">
-              <font-awesome-icon icon="fa-solid fa-at" />
-              <a
-                aria-label="Link to my email"
-                class="email"
-                href="https://www.coesio.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                >coesio.com</a
-              >
+            <p><b>Technologies used</b></p>
+            <p>I use the following technologies to develop optimized, fast, and cutting-edge web solutions:</p>
+            <div class="tech-grid">
+              <div>
+                <p><b>Front-end</b></p>
+                <ul>
+                  <li>React</li>
+                  <li>NextJs (full-stack)</li>
+                  <li>VueJs</li>
+                  <li>Material UI (MUI)</li>
+                  <li>NextUI</li>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </div>
+              <div>
+                <p><b>Back-end</b></p>
+                <ul>
+                  <li>NodeJs</li>
+                  <li>Python</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+              <div>
+                <p><b>Environment / Production</b></p>
+                <ul>
+                  <li>Docker</li>
+                  <li>Digital Ocean</li>
+                  <li>Apache</li>
+                  <li>NginX</li>
+                  <li>Heroku</li>
+                </ul>
+              </div>
             </div>
-            <br /><br />
-            Developer of the new COESIO website (coesio.com), an
-            environmental consulting firm in Montreal. Chose
-            Webflow for its HTML/CSS integration and easy
-            customization. Created a visually appealing site with
-            CMS for smooth content editing. Features include a
-            robust blog, job offering modules, and responsive
-            design for an optimal experience on all platforms.
-            Used CSS, HTML, Figma, and Webflow in Front-End.
-            Web development experience, providing the client
-            with a site in line with their brand and easy content
-            management.
-            <br/>
-            <br/>
-            <b>Technologies: Webflow, HTML, CSS, JavaScript, Figma.</b>
           </div>
         </div>
       </div>
       <div v-else>
         <div class="txt-container top">
-          <div class="wrapper">./experience_recente/coesio</div>
+          <div class="wrapper">./technologies</div>
           <div class="wrapper">
-            <h3>Nouveau site web de COESIO</h3>
-            <div class="button">
-              <font-awesome-icon icon="fa-solid fa-at" />
-              <a
-                aria-label="Link to my email"
-                class="email"
-                href="https://www.coesio.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                >coesio.com</a
-              >
+            <p><b>Technologies utilisées</b></p>
+            <p>J'utilise les technologies suivantes afin de développer des solutions web optimisées, rapides et à la fine pointe de la technologie:</p>
+            
+            <div class="tech-grid">
+              <div>
+                <p><b>Front-end</b></p>
+                <ul>
+                  <li>React</li>
+                  <li>NextJs (full-stack)</li>
+                  <li>VueJs</li>
+                  <li>Material UI (MUI)</li>
+                  <li>NextUI</li>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </div>
+              <div>
+                <p><b>Back-end</b></p>
+                <ul>
+                  <li>NodeJs</li>
+                  <li>Python</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+              <div>
+                <p><b>Environnement / Production</b></p>
+                <ul>
+                  <li>Docker</li>
+                  <li>Digital Ocean</li>
+                  <li>Apache</li>
+                  <li>NginX</li>
+                  <li>Heroku</li>
+                </ul>
+              </div>
             </div>
-            <br /><br />
-                Développeur du nouveau site web de COESIO (coesio.com), une entreprise de consultation environnementale basée à Montréal. J'ai opté pour Webflow en raison de son intégration HTML/CSS et de sa facilité de personnalisation. J'ai créé un site visuellement attrayant avec un système de gestion de contenu (CMS) pour une édition de contenu fluide. Les fonctionnalités comprennent un blog robuste, des modules d'offres d'emploi et un design réactif pour une expérience optimale sur toutes les plateformes. Mon travail en Front-End a impliqué l'utilisation de CSS, HTML, Figma et Webflow. Cette expérience de développement web a permis de fournir au client un site conforme à leur identité de marque et facile à gérer en termes de contenu.
-            <br/>
-            <br/>
-              <b>Technologies: Webflow, HTML, CSS, JavaScript, Figma.</b>
-          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -212,6 +227,7 @@ import { lang } from "@/scripts/lang";
 
 <script>
 import { gsap } from "gsap";
+import logosVue from "./work/logos.vue";
 
 export default {
   name: "Work",
@@ -293,7 +309,7 @@ section {
   margin: 0;
   margin-inline: auto;
   max-width: 50rem;
-  padding-inline: 1rem;
+  padding: 1rem;
 }
 
 .txt-container {
@@ -314,6 +330,11 @@ section {
   z-index: -2;
   inset: 0;
   transform: skewY(5deg);
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
 }
 
 @media screen and (max-width: 500px) {

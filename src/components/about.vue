@@ -8,19 +8,18 @@
                 </div>
                 <div class="wrapper">
                     <p v-if="lang.lang === 'en'">
-                        I have a computer science degree from Laval University in Quebec city,
-                        I am currently attending the 42Quebec School of programming
+                        I have a computer science degree from Laval University in Quebec city, 
                         and I am also a Master of Music (M.Mus) in jazz guitar performance.
-                        I am seeking a full-stack programmer position.
+                        I am currently a full-stack developer.
                         My strengths as a programmer reside in my creativity and my perseverance. When I put
                         my mind to something, there is no stopping me.
                     </p>
                     <p v-else>
-                        Je suis titulaire d'un diplôme en informatique de l'Université Laval à Québec. Actuellement, je poursuis mes études à l'école de programmation 42Québec. Par ailleurs, je suis également titulaire d'une maîtrise en musique (M.Mus) avec spécialisation en guitare jazz. Je suis à la recherche d'un poste de programmeur full-stack. Mes atouts en tant que programmeur résident dans ma créativité et ma persévérance. Lorsque je me fixe un objectif, rien ne peut m'arrêter.
+                        Je suis titulaire d'un diplôme en informatique de l'Université Laval à Québec. Actuellement, je suis développeur web full-stack à mon compte. Par ailleurs, je suis également titulaire d'une maîtrise en musique (M.Mus) avec spécialisation en guitare jazz. Mes atouts en tant que programmeur résident dans ma créativité et ma persévérance. Lorsque je me fixe un objectif, rien ne peut m'arrêter.
                     </p>
                     <div class="button">
                         <font-awesome-icon icon="fa-solid fa-at" />
-                        <a aria-label="Link to my email" class="email" href="mailto:jflemieux@parallel46.ca">Drop me a line !</a>
+                        <a aria-label="Link to my email" class="email" href="mailto:info@jeffl.dev">Drop me a line !</a>
                     </div>
                 </div>
             </div>
